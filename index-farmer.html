@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>麻豆小農有機田園</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./js/js.css">
+</head>
+
+<body>
+    <!-- Navbar導覽列 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light bg-success bg-gradient ">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light h4" href="#"
+                style="background-color:darkolivegreen; font-size: 24px;">麻豆小農有機田園</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-lg-0 mb-5">
+                    <li class="nav-item h4">
+                        <a class="nav-link active text-light" aria-current="page" href="#index">首頁</a>
+                    </li>
+                    <li class="nav-item h4">
+                        <a class="nav-link text-light" aria-current="page" href="#about">關於我們</a>
+
+                    </li>
+                    <li class="nav-item h4">
+                        <a class="nav-link text-light" href="#product">產品訂購</a>
+                    </li>
+                    <li class="nav-item h4">
+                        <a class="nav-link text-light" href="#market">台南農產介紹</a>
+                    </li>
+                    <li class="nav-item h4">
+                        <a class="nav-link text-light" href="#contact">聯絡我們</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="搜尋主題或產品" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main">
+        <!-- marquee跑馬燈 -->
+        <marquee class="marquee" align="middle">麻豆小農有機田園，由台南麻豆在地小農和家人一起經營自產自銷，以天然有機方式種植無添加任何農藥，歡迎大家採購安心享用。</marquee>
+
+        <!-- carousel旋轉燈 -->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="./images/carousel-01.jpg" class="d-block w-100 h-70vh" alt="...">
+                    <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div> -->
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./images/carousel-02.jpg" class="d-block w-100 h-70vh" alt="...">
+                    <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div> -->
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./images/carousel-03.jpg" class="d-block w-100 h-70vh" alt="...">
+                    <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div> -->
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./images/carousel-04.jpg" class="d-block w-100 h-70vh" alt="...">
+                    <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div> -->
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <br>
+
+        <!-- 主要內容 -->
+        <div id="index"></div>
+        <div class="container" id="indexContainer">
+            <div id="brandStory" class="row text-center">
+                <div class="services_popup row">
+                    <div class="popup col-md-12 mb-4">
+                        <img class="popimg h-85vh img-fluid" src="./images/about-01.jpg">
+                        <div class="pop_info">
+                            <div class="title_s">
+                                <h4>探索有機田園</h4>
+                            </div>
+                            <div class="info">
+                                歡迎闔家共同來到果園，讓孩子們親身體驗種植過程，從中學習關於自然和食物的知識，共同探索美麗的自然風光，並提供專業的導覽，讓您深入了解有機種植的過程和技術。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup col-md-12 mb-4">
+                        <img class="popimg h-85vh img-fluid" src="./images/about-02.jpg" alt="">
+                        <div class="pop_info">
+                            <div class="title_s">
+                                <h4>感受自然之美</h4>
+                            </div>
+                            <div class="info">
+                                遠離城市的塵囂，深深感受到大自然的力量和美麗，體驗一些有趣的農場活動和採摘體驗，讓您親手採收成熟的水果，感受勞作的樂趣，並將收穫帶回家，分享與親友。</div>
+                        </div>
+                    </div>
+                    <div class="popup col-md-12 mb-4">
+                        <img class="popimg h-85vh img-fluid" src="./images/about-04.jpg" alt="">
+                        <div class="pop_info">
+                            <div class="title_s">
+                                <h4>尋找純粹的美味</h4>
+                            </div>
+                            <div class="info">
+                                品嚐美味的農產品，秉持著純淨種植理念，不使用任何化學農藥，為您提供最天然、最純淨的滋味，現場品嚐由新鮮水果現榨而成的果汁，果香四溢，保留水果的最佳風味和營養。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 關於我們 -->
+        <div id="about"></div>
+        <div class="container mt-4">
+            <section>
+                <h2>關於我們</h2>
+                <!-- <p>麻豆小農有機田園介紹及相關資訊</p> -->
+                <div id="plant" class="row">
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="./images/intro.jpg" alt="" style="height: 85vh;">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="plant2">
+                            <div class="plantInfo">
+                                <h4 class="text-orange">麻豆小農有機田園</h5>
+                                    <h5>改善生活農場，為了實踐保護自然生態、淨化身心靈、完成環保綠化的理念，而創建的一個多功能食農教育與香草療育示範田園。</h5>
+                                    <h5>它同時肩負著推廣綠善農法，並致力於引導人們回歸自然、健康喜樂的綠善心生活，以實際行動支持友善耕種小農及地方創生。</h5>
+                                    <a class="q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--round q-btn--actionable q-focusable q-hoverable plantBtn"
+                                        tabindex="0" href="#/story">
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- 產品訂購 -->
+    <section>
+        <div id="product"></div>
+        <div class="container mt-4 product ">
+            <!-- <section class="mt-5"> -->
+            <h2>產品訂購</h2>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./images/product-001.jpg" class="card-img-top img-thumbnail" alt="文旦">
+                        <div class="card-body  text-center">
+                            <h5 class="card-title">
+                                <button type="button" class="btn btn-success fs-4 fw-bold " data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal1">文 旦 柚
+                                </button>
+                            </h5>
+                            <p class="card-text">柑橘之王，外皮厚實多汁，酸甜交融，富含維生素C，是夏日天然補給站。</p>
+                            <!-- <a href="#exampleModal" class="btn btn-primary">訂購</a> -->
+                            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal1">
+                                    產品介紹
+                                </button> -->
+                            <!-- <div class="d-grid gap-2">
+                                    <button type="button" name="" class="btn btn-primary itemBtn stockName" value="文旦柚">訂購</button>
+                                </div> -->
+                            <div class="text-center">
+                                <!-- <a href="#" class="btn btn-primary"> -->
+                                <button class="itemBtn btn btn-primary" type="button" id="item1Btn"
+                                    data-stock-name="文旦柚" data-price=70>訂購
+                                </button>
+                                <!-- </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center">
+                        <img src="./images/product-02.jpg" class="card-img-top img-thumbnail" alt="酪梨">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <button type="button" class="btn btn-success fs-4 fw-bold " data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal2">酪 梨
+                                </button>
+                            </h5>
+                            <p class="card-text">綠色奢華，豐富的單不飽和脂肪酸，滋潤肌膚，口感滑嫩，是健康美味代表。</p>
+                            <!-- <a href="#exampleModal" class="btn btn-primary">訂購</a> -->
+                            <!-- <div class="d-grid gap-2">
+                                    <button type="button" name="" class="btn btn-primary itemBtn " value="酪梨">訂購</button>
+                                </div> -->
+                            <div class="text-center">
+                                <!-- <a href="#" class="btn btn-primary"> -->
+                                <button class="itemBtn btn btn-primary" type="button" id="item2Btn" data-stock-name="酪梨"
+                                    data-price=50>訂購
+                                </button>
+                                <!-- </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center">
+                        <img src="./images/product-03.jpg" class="card-img-top img-thumbnail" alt="龍眼">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <button type="button" class="btn btn-success fs-4 fw-bold " data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal3">龍 眼
+                                </button>
+                            </h5>
+                            <p class="card-text">東方珍寶，皮薄肉厚，鮮甜多汁，飽含維生素B和抗氧化劑，是夏季養生聖品。</p>
+                            <!-- <a href="#exampleModal" class="btn btn-primary">訂購</a> -->
+                            <!-- <div class="container mt-5"> -->
+                            <!-- <div class="d-grid gap-2">
+                                        <button type="button" name="" class="btn btn-primary itemBtn stockName" value="龍眼">訂購</button>
+                                    </div> -->
+                            <div class="text-center">
+                                <!-- <a href="#" class="btn btn-primary"> -->
+                                <button class="itemBtn btn btn-primary" type="button" id="item3Btn" data-stock-name="龍眼"
+                                    data-price=40>訂購
+                                </button>
+                                <!-- </a> -->
+                            </div>
+
+                            <!-- Modal彈出視窗 -->
+                            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">產品介紹</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h3 class="fw-bold">文旦柚</h3>
+                                            <h5>一台斤裝70元，未滿10台斤運費100元，10台斤(含)以上免運費</h5>
+                                            <img src="./images/buy-01.jpg" alt="商品圖片" class="img-fluid">
+                                            <!-- <label for="" class="mt-2">訂購重量(幾台斤)</label>
+                                                <input type="number" name="buy01number" id="buy01number"> -->
+                                        </div>
+                                        <!-- <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary"
+                                                    id="buy01Btn">確定訂購</button>
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">取消</button>
+                                            </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">產品介紹</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h3 class="fw-bold">酪梨</h3>
+                                            <h5>一台斤裝50元，未滿10台斤運費100元，10台斤(含)以上免運費</h5>
+                                            <img src="./images/buy-02.jpg" alt="商品圖片" class="img-fluid">
+                                            <!-- <label for="" class="mt-2">訂購重量(幾台斤)</label>
+                                                <input type="number" name="buy02number" id="buy02number"> -->
+                                        </div>
+                                        <!-- <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary"
+                                                    id="buy02Btn">確定訂購</button>
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">取消</button>
+                                            </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">產品介紹</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h3 class="fw-bold">龍眼</h3>
+                                            <h5>一台斤裝40元，未滿10台斤運費100元，10台斤(含)以上免運費</h5>
+                                            <img src="./images/buy-03.jpg" alt="商品圖片" class="img-fluid">
+                                            <!-- <label for="" class="mt-2">訂購重量(幾台斤)</label>
+                                                <input type="number" name="buy03number" id="buy03number"> -->
+                                        </div>
+                                        <!-- <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary"
+                                                    id="buy03Btn">確定訂購</button>
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">取消</button>
+                                            </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- </section> -->
+        </div>
+
+        <div class="container mt-5 border border-black" id="container-items">
+            <div class="item-row row mt-5">
+                <div class="col">
+                    <div class="mb-3">
+                        <label class="form-label">產品名稱</label>
+                        <input type="text" class="form-control stockName" disabled>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="psInput" class="form-label">單價(元)</label>
+                        <input type="text" class="form-control psInput" readonly>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-3">
+                        <label class="form-label">重量(台斤)</label>
+                        <input type="number" class="form-control numInput" min="1">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="totalInput" class="form-label">小計(元)</label>
+                        <input type="number" class="form-control totalInput" value='0' readonly>
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="freightInput" class="form-label">運費另計(元)</label>
+                    <select class="form-select freightInput" name="freightInput">
+                        <option value="免運" selected>免運</option>
+                        <option value="100元">100</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="psInput" class="form-label">操作</label>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-danger delBtnAll" type="button">
+                                <i class="fa-solid fa-xmark"></i>取消訂購</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col">
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-warning" type="button" id="checkBtn">確定結帳</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    <hr>
+                    結帳清單
+                    <div class="div p-5 border border-black" id="exDiv">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <!-- 台南農產介紹 -->
+        <div id="market"></div>
+        <div class="container mt-4 market">
+            <!-- <section class="mt-5"> -->
+            <h2>台南農產介紹</h2>
+            <!-- <button id="ajaxBtn">ajaxBtn</button> -->
+            <table id="myTable" class="display">
+                <thead>
+                    <tr>
+                        <th>序號</th>
+                        <th>農產品</th>
+                        <th>生產區</th>
+                        <th>生產期</th>
+                    </tr>
+                </thead>
+                <tbody id="myTbody">
+                    <!-- insert jquery data -->
+                    <!-- foreach php .... -->
+                </tbody>
+            </table>
+            <!-- </section> -->
+        </div>
+
+        <!-- 聯絡我們 -->
+        <div id="contact"></div>
+        <div class="container mt-4 contact">
+            <section class="mt-5">
+                <h2>聯絡我們</h2>
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                            aria-selected="true">會員登入</button>
+
+                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">會員註冊</button>
+                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                            type="button" role="tab" aria-controls="nav-contact" aria-selected="false">聯絡方式</button>
+                    </div>
+                </nav>
+
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <form id="login">
+                            <div class="mb-3">
+                                <br>
+                                <label for="exampleInputEmail1" class="form-label">帳號</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">密碼</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">記住我</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">登入</button>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <form class="row g-3 mt-3">
+                            <div class="col-md-6">
+                                <label for="inputAcc" class="form-label">帳號</label>
+                                <input type="text" class="form-control" id="inputAcc">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label">Email電子信箱</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputPassword4" class="form-label">密碼</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputPassword5" class="form-label">密碼確認</label>
+                                <input type="password" class="form-control" id="inputPassword5">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputBirthday" class="form-label">出生年月日</label>
+                                <input type="text" class="form-control" id="inputBirthday">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputAddress" class="form-label">手機號碼</label>
+                                <input type="text" class="form-control" id="inputPhone" placeholder="09XX-XXX-XXX">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="inputState" class="form-label">居住縣市</label>
+                                <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>臺北市</option>
+                                    <option>新北市</option>
+                                    <option>基隆市</option>
+                                    <option>桃園市</option>
+                                    <option>新竹市</option>
+                                    <option>苗栗縣</option>
+                                    <option>南投縣</option>
+                                    <option>彰化縣</option>
+                                    <option>臺中市</option>
+                                    <option>雲林縣</option>
+                                    <option>嘉義市</option>
+                                    <option>台南市</option>
+                                    <option>高雄市</option>
+                                    <option>花蓮縣</option>
+                                    <option>臺東縣</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="inputZip" class="form-label">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputFavorite" class="form-label">最喜愛的農產品</label>
+                                <!-- <input type="text" class="form-control" id="inputNBAteam"> -->
+                                <select id="inputFavorite" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>文旦柚</option>
+                                    <option>酪梨</option>
+                                    <option>龍眼</option>
+                                    <option>檸檬</option>
+                                    <option>鳳梨</option>
+                                    <option>釋迦</option>
+                                    <option>茄子</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">註冊</button>
+                            </div>
+                        </form>.
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <div class="container mt-3">
+                            <h1>About US</h1>
+                            <p>歡迎來到麻豆小農有機田園！我們是一個致力於提供有機農產品的果農，</p>
+                            <p>無論您需要什麼樣的支援或服務，我們都竭誠為您提供。</p>
+                            <p>請隨時與我們聯繫，讓我們知道您有任何需求或建議。謝謝！</p>
+                            <p>負責人：王天德</p>
+                            <p>連絡電話：(06)572-8229、0937-903566</p>
+                            <p>Email：Madou-Farmer@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="clearfix"></div>
+    </section>
+
+    <footer class="bg-success bg-gradient  text-light py-2 mt-2">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <p style="font-size: 1.2rem;">&copy; 2023 麻豆小農有機田園. All Rights Reserved.</p>
+                    <p style="font-size: 1.2rem;">負責人：王天德 | 電話：0937-903566 | 地址：麻豆區庄井里66號</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+    <script src="./js/js.js"></script>
+</body>
+
+</html>
