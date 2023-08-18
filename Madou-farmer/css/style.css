@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* 在手機裝置上設定不同的字體大小 */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 24px;
+  }
+}
+
+/* 在電腦裝置上設定不同的卡片寬度 */
+@media (min-width: 768px) {
+  .card {
+    width: 20rem;
+  }
+}
+.main{
+  padding: 70px 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.bg-success {
+  /* --bs-bg-opacity: 0.5; */
+  background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
+}
+
+img.h-90vh {
+  height: 85vh;
+  /* width: 70vw; */
+}
+
+img.h-85vh {
+  height: 85vh;
+  width: 70vw;
+}
+
+.h-70vh {
+  height: 70vh;
+}
+
+.marquee {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.clearfix {
+  /* 用來清除浮動的屬性 */
+  clear: both;
+}
+
+.name {
+  font-size: 24px;
+  width: 90%;
+  color: darkblue;
+  text-shadow: 2px 2px 2px skyblue;
+}
+
+.content {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+li.ajax {
+  width: 20%;
+  display: inline-block;
+  margin: 1%;
+  box-shadow: 2px 2px 10px #ccc;
+  padding: 10px;
+  vertical-align: top;
+  transition: all 0.5s;
+}
+
+li.ajax:hover {
+  transform: scale(1.15);
+  transition: all 0.5s;
+}
+
+.nav-item:hover{
+  background-color:darksalmon;
+}
+
+#index{
+  padding-bottom: 60px;
+}
+
+#product{
+  padding-bottom: 50px;
+}
+
+#about{
+  padding-bottom: 50px;
+}
+
+#market{
+  padding-bottom: 50px;
+}
+
+#contact{
+  padding-bottom: 10px;
+}
+
