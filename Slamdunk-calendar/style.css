@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* font-family: 'ISOCTEUR'; */
+}
+
+body {
+    width: 90%;
+    /* height: 90vh; */
+    margin: 0 auto;
+    background-color: lightgoldenrodyellow;
+}
+
+.background {
+    background-image: url(./images/slamdunk.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* 背景圖片不會隨頁面滾動 */
+    background-position: center;
+    background-size: cover;
+}
+
+.background::after {
+    /* position: relative; */
+    content: '';
+    display: block;
+    position: fixed;
+    /* 模糊大小 */
+    width: 60%;
+    height: 76%;
+    /* 模糊位置 */
+    top: 45px;
+    left: 25%;
+    /* 向下一層 */
+    z-index: -1;
+    /* 陰影效果 */
+    box-shadow: 0 0 0 1px grey inset, 0 8px 16px black;
+    /* 毛玻璃效果 */
+    backdrop-filter: blur(3px);
+}
+
+.title {
+    font-family: Impact, fantasy;
+    font-size: 30px;
+    text-align: center;
+    margin: 5px auto;
+}
+
+.month {
+    text-align: center;
+    font-size: 24px;
+    margin: 5px auto;
+}
+
+.month>a {
+    text-decoration: none;
+}
+
+.arrow {
+    padding-top: -10px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 90%;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.aside {
+    width: 25%;
+    height: 100%;
+    background-color: aquamarine;
+    /* float:right; */
+    /* text-align: right; */
+    margin-top: 10px;
+}
+
+.aside>img {
+    border: 5px solid whitesmoke;
+    /* display: block; */
+    /* margin-top: 4px; */
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 2px lightgrey;
+    /* height: 10vh; */
+    /* height: calc(100%-8vh); */
+    /* background-color: aquamarine; */
+}
+
+.section {
+    /* margin: 0; */
+    margin-top: 10px;
+    width: 80%;
+    height: 100%;
+    /* height: 80vh; */
+}
+
+/* 下方時間欄位 */
+.select {
+    font-size: 30px;
+    margin-left: -120px;
+}
+
+.section {
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin-bottom: -50px;
+}
+
+.calendar {
+    width: 80%;
+    /* margin: 10px; */
+    margin: 5px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calendar>div {
+    width: calc(100% / 7);
+    height: 9vh;
+    border: 2px solid lightseagreen;
+    border-radius: 10px;
+    /* padding-top: 10px; */
+    line-height: 4vh;
+    font-size: 18px;
+    color: black;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+
+.calendar>div:nth-child(1),
+.calendar>div:nth-child(2),
+.calendar>div:nth-child(3),
+.calendar>div:nth-child(4),
+.calendar>div:nth-child(5),
+.calendar>div:nth-child(6),
+.calendar>div:nth-child(7) {
+    background-color: lightskyblue;
+    color: lightyellow;
+    line-height: 9vh;
+}
+
+.calendar>div:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+.today {
+    background: lightgreen;
+}
+
+.weekend {
+    background-color: lightpink;
+    opacity: 0.7
+}
+
+.holiday {
+    color: red;
+    font-weight: bolder;
+}
+
+.motto {
+    position: absolute;
+    top: 200px;
+    right: 140px;
+    width: 160px;
+    height: 100px;
+    background-color: lightyellow;
+    border-radius: 10px;
+    animation-name: motto;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    box-shadow: 0 5px 20px #FFFFFF;
+    opacity: 0.7;
+    font-style: italic;
+    font-weight: bold;
+}
+
+@keyframes motto {
+    0% {
+        top: 200px;
+    }
+
+    50% {
+        top: 620px;
+    }
+
+    100% {
+        top: 200px;
+    }
+}
+
+.text {
+    text-align: center;
+    line-height: 26px;
+}
+
+.tail {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 30px 10px 0px 10px;
+    border-color: lightyellow transparent;
+    transform: rotate(40deg);
+    top: 88px;
+    right: 140px;
+}
+
+.select {
+    font-size: 30px;
+}
+
+.option {
+    font-size: 24px;
+}
+
+.input {
+    font-size: 24px;
+}
+
+marquee {
+    margin-top: 10px;
+}
